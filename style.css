@@ -1,0 +1,57 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    height: 100vh;
+    width: 100%;
+    background-color: aquamarine;
+    display: flex;
+}
+
+.cadre{
+    background-color: lightcoral;
+    width: 50%;
+    height: 40%;
+    margin: auto;
+    display: flex;
+}
+
+.circle{
+    background-color: brown;
+    height: 100px;
+    width: 200px;
+    margin: auto;
+    border-radius: 200px;
+    cursor: pointer;
+}
+
+.circle::before{
+    content: "";
+    height: 90px;
+    width: 90px;
+    background-color: #ffffff;
+    display: block;
+    border-radius: 200px;
+    margin: 5px;
+    position: relative;
+    cursor: pointer;
+    
+}
+
+input:checked + .circle{
+    background-color: blueviolet;
+    
+}
+
+input:checked + .circle::before{
+    background-color: blueviolet;
+    transform: translateX(100px);
+    background-color: #ffffff;
+}
+
+input{
+    display: none;
+}
