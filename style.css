@@ -17,6 +17,7 @@ body{
     height: 40%;
     margin: auto;
     display: flex;
+   
 }
 
 .circle{
@@ -26,6 +27,7 @@ body{
     margin: auto;
     border-radius: 200px;
     cursor: pointer;
+    
 }
 
 .circle::before{
@@ -38,7 +40,7 @@ body{
     margin: 5px;
     position: relative;
     cursor: pointer;
-    
+    transition: 0.7s;
 }
 
 input:checked + .circle{
